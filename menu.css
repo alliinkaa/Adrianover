@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EFD9A2; /* Бежевый фон */
+    color: #7D0505;
+}
+
+/* Хедер */
+.header {
+    background-color: #610303; /* Темно-красный */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 80px;
+    margin-left: 90px;
+}
+
+.nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: right;
+}
+
+.nav a:hover{
+    background-color: #f1e8e8;/* изменяем цвет фона при наведении */
+    color: #610303;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.header nav{
+    margin-right: 100px;
+}
+
+.menu-section {
+    padding: 20px;
+    background-color: #EFD9A2; /* Бежевый */
+}
+
+.menu-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.menu-categories {
+    display: flex; /* Для горизонтального расположения элементов */
+    justify-content: center; /* Чтобы выровнять элементы по центру */
+    gap: 10px; /* Добавляем отступы между элементами */
+    margin: 20px 0; /* Немного отступа сверху и снизу */
+}
+
+
+.menu-categories a, .dropbtn {
+    position: relative; /* Позволяет использовать абсолютное позиционирование для псевдоэлемента */
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: #7D0505;
+    font-size: 22px;
+    border-bottom: 2px solid transparent; /* Скрываем нижнюю границу */
+}
+
+.menu-categories a:hover {
+    border-bottom: 2px solid #8b0000; /* Цвет линии при наведении */
+}
+
+.menu-categories a.active {
+    font-weight: bold; /* Делаем текст жирным */
+    color: #8b0000; /* Цвет текста */
+    border-bottom: 2px solid #8b0000; /* Добавляем черточку под активной ссылкой */
+}
+
+.menu-categories a.active,
+.menu-categories a:hover,
+.dropbtn:hover {
+    font-weight: bold;
+    color: #8b0000;
+}
+
+/* Стиль для выпадающих меню */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #7D0505;
+    opacity: 80%;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Секция с блюдами */
+.dishes {
+    display: flex;
+    flex-wrap: wrap; /* Контейнеры блюд будут обтекаться в новый ряд, когда не помещаются */
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.dish-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 22%; /* Уменьшаем ширину блюда, чтобы с учетом отступов вмещалось 4 блюда в ряд */
+    height: 450px;
+    text-align: left;
+    padding: 0px;
+    margin: 10px 0; /* Отступ сверху и снизу */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.dish-item img {
+    width: 100%;
+    margin: 0;
+    display: block; /* Убирает возможные дополнительные отступы */
+    height: 250px;
+    object-fit: cover;
+}
+
+.dish-info {
+    padding: 10px; /* Внутренние отступы для текста, чтобы он не прижимался к краям */
+    height: calc(300px - 150px); /* Высота блока с текстом, чтобы поместилось в общую высоту */
+    padding-left: 15px;
+}
+
+.dish-info h3 {
+    margin: 10px 0;
+}
+
+.name-and-gr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; /* Отступ снизу между названием и составом */
+}
+
+.name-and-gr h3 {
+    margin: 0;
+}
+
+.name-and-gr p {
+    margin: 0;
+    font-size: 16px; /* Размер шрифта для веса */
+}
+
+.price {
+    font-size: 18px;
+    color: #8b0000;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 15px;
+}
+
+button {
+    background-color: white;
+    color: #610303;
+    border: 2px solid #610303; /* Красная обводка */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    cursor: pointer;
+    border-radius: 25px; /* Закругленные углы */
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px; /* Отступ сверху, чтобы кнопка не прижималась к тексту */
+    display: block; /* Делаем кнопку блочным элементом */
+    margin-left: auto; /* Для центрирования по горизонтали */
+    margin-right: auto; /* Для центрирования по горизонтали */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+}
+button:hover {
+    background-color: #610303; /* Красный фон при наведении */
+    color: white; /* Белый текст при наведении */
+}
+

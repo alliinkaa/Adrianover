@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Adriano</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="Логотип" />
+        </div>
+        
+        <nav class="nav">
+            <a href="page.html#aboutus">О нас</a>
+            <a href="menu.html">Меню</a>
+            <a href="page.html#order">Торты на заказ</a>
+            <a href="page.html#ourbranches">Филиалы</a>
+            <a href="page.html#ourbranches">Контакты</a>
+            <a href="login-register.html"><i class="fas fa-user"></i></a>
+            <!--<a href="#"><i class="fa-solid fa-cart-shopping"></i></a>-->  
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="overlay">
+            <h1 class="main-title">Adriano Coffee</h1>
+            <p class="description">Оставьте все мысли, которые отвлекают вас<br>
+                от прекрасного за дверями нашей кофейни<br>
+                и проведите время с близкими в Adriano Coffee.</p>
+        </div>
+    </section>
+
+    <main>
+        
+
+        <section id="aboutus" class="next-container">
+            <div class="background-image1"></div>
+            <div class="ellipse">
+                <img src="images/aboutuscoffee.jpg" alt="Ellipse Image">
+            </div>
+            <div class="details">
+                <h2 class="about-us">О нас</h2>
+                <p class="additional-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </section>
+
+        <section class="new-container">
+            <a href="menu.html" class="inner-container">
+                <img src="images/cupofcoffee.png" alt="Кофе">
+                <p>Кофе</p>
+            </a>
+            <a href="breakfast.html" class="inner-container">
+                <img src="images/breakfast.png" alt="Завтраки">
+                <p>Завтраки</p>
+            </a>
+            <div class="inner-container">
+                <img src="images/tea.png" alt="Чай">
+                <p>Чай</p>
+            </div>
+            <div class="inner-container">
+                <img src="images/soup.png" alt="Супы">
+                <p>Супы</p>
+            </div>
+            <div class="inner-container">
+                <img src="images/bake.png" alt="Выпечка">
+                <p>Выпечка</p>
+            </div>
+            <div class="review-menu-rectangle">
+                <a href="menu.html" class="reviewmenu">Посмотреть меню</a>
+            </div>
+        </section>
+        
+        <section class="roasting-section">
+            <div class="roasting-title">
+                <img src="images/roasting.png" alt="Coffee Icon">
+                <h1>ОБЖАРОЧНЫЙ ЦЕХ</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <div class="roasting-media">
+                <video width="1500" height="500" controls>
+                    <source src="images/roasting.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает элемент video.
+                </video>
+            </div>
+        </section>
+
+        <section id="order" class="order-cakes">
+            <div class="text-content">
+                <h3>Торты на заказ</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href="order.html" class="order-link">Заказать ⟶</a>
+            </div>
+    
+            <div class="gallery-container">
+                <button class="gallery-nav prev">❮</button>
+                <div class="gallery">
+                    <img src="images/cake1.jpg" class="gallery-item active" alt="Торт 1">
+                    <img src="images/cake2.jpg" class="gallery-item " alt="Торт 2">
+                    <img src="images/cake3.jpg" class="gallery-item " alt="Торт 3">
+                </div>
+                <button class="gallery-nav next">❯</button>
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="ourbranches" class="ourbranches-section">
+            <div class="our-branches">
+            <img src="images/branches.png" alt="Coffee shop Icon">
+            <h1>НАШИ КОФЕЙНИ</h1>
+        </div>
+        </section>
+
+        <section class="branches-section">
+            <div class="branch-container">
+                <div class="branch-gallery">
+                    <img src="images/cake1.jpg" alt="Филиал 1 Фото 1">
+                    <img src="images/cake2.jpg" alt="Филиал 1 Фото 2">
+                    <img src="images/branch1_3.jpg" alt="Филиал 1 Фото 3">
+                </div>
+                <div class="branch-info">
+                    <p>Адрес: ул. Айтматова 29 </p>
+                    <p>Телефон: +996 555-555-555</p>
+                    <p>Время работы: Пн-Вс 7:30-24:00</p>
+                    <a href="https://go.2gis.com/q0pns" target="_blank" class="gis-link">
+                        <img src="images/2gis.png" alt="2ГИС">
+                    </a>
+                </div>
+                <div class="branch-gallery">
+                    <img src="images/branch2_1.jpg" alt="Филиал 2 Фото 1">
+                    <img src="images/branch2_2.jpg" alt="Филиал 2 Фото 2">
+                </div>
+                <div class="branch-info">
+                    <p>Адрес: ул. Айтматова 29 </p>
+                    <p>Телефон: +996 555-555-555</p>
+                    <p>Время работы: Пн-Вс 7:30-24:00</p>
+                    <a href="https://2gis.ru" target="_blank" class="gis-link">
+                        <img src="images/2gis.png" alt="2ГИС">
+                    </a>
+                </div>
+            </div>
+            <div class="branch-container">
+                <div class="branch-info">
+                    <p>Адрес: ул. Айтматова 29 </p>
+                    <p>Телефон: +996 555-555-555</p>
+                    <p>Время работы: Пн-Вс 7:30-24:00</p>
+                    <a href="https://2gis.ru" target="_blank" class="gis-link">
+                        <img src="images/2gis.png" alt="2ГИС">
+                    </a>
+                </div>
+                <div class="branch-gallery">
+                    <img src="images/branch3_1.jpg" alt="Филиал 3 Фото 1">
+                    <img src="images/branch3_2.jpg" alt="Филиал 3 Фото 2">
+                </div>
+                <div class="branch-info">
+                    <p>Адрес: ул. Айтматова 29 </p>
+                    <p>Телефон: +996 555-555-555</p>
+                    <p>Время работы: Пн-Вс 7:30-24:00</p>
+                    <a href="https://2gis.ru" target="_blank" class="gis-link">
+                        <img src="images/2gis.png" alt="2ГИС">
+                    </a>
+                </div>
+                <div class="branch-gallery">
+                    <img src="images/branch4_1.jpg" alt="Филиал 4 Фото 1">
+                    <img src="images/branch4_2.jpg" alt="Филиал 4 Фото 2">
+                </div>
+            </div>
+            <div class="branch-container">
+                <div class="branch-gallery">
+                    <img src="images/cake1.jpg" alt="Филиал 1 Фото 1">
+                    <img src="images/cake2.jpg" alt="Филиал 1 Фото 2">
+                    <img src="images/branch1_3.jpg" alt="Филиал 1 Фото 3">
+                </div>
+                <div class="branch-info">
+                    <p>Адрес: ул. Айтматова 29 </p>
+                    <p>Телефон: +996 555-555-555</p>
+                    <p>Время работы: Пн-Вс 7:30-24:00</p>
+                    <a href="https://go.2gis.com/q0pns" target="_blank" class="gis-link">
+                        <img src="images/2gis.png" alt="2ГИС">
+                    </a>
+                </div>
+                <div class="branch-gallery">
+                    <img src="images/cake2.jpg" alt="Филиал 2 Фото 1">
+                    <img src="images/branch2_2.jpg" alt="Филиал 2 Фото 2">
+                </div>
+                <div class="branch-info">
+                    <p>Адрес: ул. Айтматова 29 </p>
+                    <p>Телефон: +996 555-555-555</p>
+                    <p>Время работы: Пн-Вс 7:30-24:00</p>
+                    <a href="https://2gis.ru" target="_blank" class="gis-link">
+                        <img src="images/2gis.png" alt="2ГИС">
+                    </a>
+                </div>
+            </div>
+            <div class="branch-container">
+                <div class="branch-info">
+                    <p>Адрес: ул. Айтматова 29 </p>
+                    <p>Телефон: +996 555-555-555</p>
+                    <p>Время работы: Пн-Вс 7:30-24:00</p>
+                    <a href="https://2gis.ru" target="_blank" class="gis-link">
+                        <img src="images/2gis.png" alt="2ГИС">
+                    </a>
+                </div>
+                <div class="branch-gallery">
+                    <img src="images/cake2.jpg" alt="Филиал 3 Фото 1">
+                    <img src="images/branch3_2.jpg" alt="Филиал 3 Фото 2">
+                </div>
+                <div class="branch-info">
+                    <p>Адрес: ул. Айтматова 29 </p>
+                    <p>Телефон: +996 555-555-555</p>
+                    <p>Время работы: Пн-Вс 7:30-24:00</p>
+                    <a href="https://2gis.ru" target="_blank" class="gis-link">
+                        <img src="images/2gis.png" alt="2ГИС">
+                    </a>
+                </div>
+                <div class="branch-gallery">
+                    <img src="images/cake1.jpg" alt="Филиал 4 Фото 1">
+                    <img src="images/branch4_2.jpg" alt="Филиал 4 Фото 2">
+                </div>
+            </div>
+        </section>
+       
+    </main>
+
+    <footer class="footer">
+        
+        <div class="footer-content">
+            <div class="social-left">
+                <a href="https://www.instagram.com/adriano_coffee?igsh=N3d3amFjMmYzZG8x" class="social-icon">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+                <span class="small-text">Adriano Coffee</span>
+            </div>
+        <div class="footlogo">
+            <img src="images/logo.png" alt="Логотип" />
+        </div>
+
+            <div class="social-right">
+                <a href="https://wa.me/996555707083" class="social-icon">
+                    <img src="images/whatsapp.png" alt="WhatsApp">
+                </a>
+                <span class="small-text">+996555707083</span>
+            </div>
+        </div>
+    </footer>
+    
+      
+
+    <script src="script.js"></script>
+
+</body>
+</html>

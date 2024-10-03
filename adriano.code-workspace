@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../adriano"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Adrianover"
+	}
+}
